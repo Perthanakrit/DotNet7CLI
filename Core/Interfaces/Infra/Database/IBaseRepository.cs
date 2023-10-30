@@ -9,6 +9,7 @@ namespace Core.Interfaces.Infra.Database
 {
     public interface IBaseRepository<TEntity> where TEntity : IBaseEntity
     {
+        Task<List<TEntity>> GetAllAsync();
         Task<TEntity> GetByIdAsync(Guid id);
         Task<bool> DoesExist(Expression<Func<TEntity, bool>> predicate);
         Task<TEntity> AddAsync(TEntity entity);

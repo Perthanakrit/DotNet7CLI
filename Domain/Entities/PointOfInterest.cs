@@ -11,8 +11,8 @@ namespace Domain.Entities
         public string? Description { get; set; }
 
         #region Entity Framework Relationships
-        public Provice? Provice { get; set; }
-        public Guid ProviceId { get; set; }
+        public Province? Province { get; set; }
+        public Guid ProvinceId { get; set; }
         #endregion
     }
 }

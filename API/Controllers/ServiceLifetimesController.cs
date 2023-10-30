@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     public class ServiceLifetimesController : ControllerBase
     {
         private readonly ITransientService _transientService;

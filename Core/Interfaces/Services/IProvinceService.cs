@@ -10,6 +10,11 @@ namespace Core.Interfaces.Services
     public interface IProvinceService
     {
         Task<ProvinceServiceResponse> CreateNewProvinceAsync(ProvinceServiceInput input);
+        Task<ProvinceServiceResponse> UpdateProvinceAsync(Guid id, ProvinceServiceInput input);
+        Task<ProvinceServiceResponse> DeleteProvinceAsync(Guid id);
+        Task<ProvinceServiceResponse> GetProvinceAsync(Guid id);
+        Task<List<ProvinceServiceResponse>> GetAllProvinceAsync();
+        Task<ProvinceServiceResponse> GetProvinceAsyncWithPointOfInterestsAsync(Guid id);
     }
 
     public class ProvinceServiceInput

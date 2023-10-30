@@ -14,7 +14,7 @@ namespace Infrastructure.Database
         {
         }
         #region DbSet List
-        public DbSet<Provice> Provinces { get; set; }
+        public DbSet<Province> Provinces { get; set; }
         public DbSet<PointOfInterest> PointOfInterests { get; set; }
         #endregion
 
@@ -24,4 +24,5 @@ namespace Infrastructure.Database
             builder.ApplyConfiguration(new PointOfInterestConfiguration());
         }
     }
+
 }

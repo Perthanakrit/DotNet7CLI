@@ -8,13 +8,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Database.Repositories
 {
-    public class ProvinceRepository : BaseRepository<Provice>, IProvinceRepository
+    public class ProvinceRepository : BaseRepository<Province>, IProvinceRepository
     {
         public ProvinceRepository(DatabaseContext context) : base(context)
         {
         }
 
-        public async Task<Provice> GetByIdWithPointOfInterestAsync(Guid id)
+        public async Task<Province> GetByIdWithPointOfInterestAsync(Guid id)
         {
             return await base._context.Provinces
                         .Include(c => c.PointOfInterests)

@@ -1,5 +1,9 @@
 # Clean architecture
 
+> .NET เป็นเฟรม opensoucr crossplatform ทำ web apps Game IOT it เป็นชุดของtool ต่างๆ for dev modern apps ได้ไวขึ้น
+> 2016 (.NET Core) ที่dev ให้ crossplaform
+> .NET 5 รวมทุกอย่างให้อยู่ใน .NET 5
+
 ### Create solution and add layer
 
 _Create 4 project in solution_
@@ -40,3 +44,5 @@ Application Configuration ใน ASP.NET Core นั้นจะถูกจั�
 Project นี้เราจะทำหน้าที่กำหนดในเรื่องของมาตราฐานในการพัฒนา Backing Service (เช่นการต่อ Database, Logging, Email) ผ่าน Interface(Infrastructure) (ต่อไปนี้จะขอเรียกว่า Infrastructure Interface) ส่วนการนำ Interface ไปพัฒนาต่อนั้นจะเป็นหน้าที่ของทาง Infra Project นะครับ
 
 > ใช้ **_Repository Pattern_** ช่วยแยกความสัมพันธ์ระหว่าง Business Domain Model (อยู่ใน Domain Project) และ Data Access Layer (อยู่ใน Infra Project)
+
+## Infrastructure Project

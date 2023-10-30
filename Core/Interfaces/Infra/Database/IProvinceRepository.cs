@@ -7,7 +7,7 @@ using Domain.Entities;
 
 namespace Core.Interfaces.Infra.Database
 {
-    public interface IProvinceRepository : IBaseRepository<Provice>
+    public interface IProvinceRepository : IBaseRepository<Province>
     {
 
     }

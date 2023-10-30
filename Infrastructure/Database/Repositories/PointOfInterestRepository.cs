@@ -9,6 +9,7 @@ namespace Infrastructure.Database.Repositories
 {
     public class PointOfInterestRepository : BaseRepository<PointOfInterest>, IPointOfInterestRepository
     {
+        // เน้นการจัดการข้อมูลที่เกี่ยวกับ Domain Model Province จาก Domain Project
         public PointOfInterestRepository(DatabaseContext context) : base(context)
         {
         }

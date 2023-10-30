@@ -7,7 +7,7 @@ namespace Infrastructure.Email
 {
     public class MailGunEmailProviderOptions
     {
-        // Option Pattern 
+        // เป็น Option Pattern for MailGunEmailProvider เพื่อเป็น Configuration ในการติดต่อกับ MailGun
         public const string ConfigItem = "MailGunEmailProvider";
 
         public string APIURL { get; set; }

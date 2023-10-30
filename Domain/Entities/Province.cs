@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Provice : BaseEntity, IBaseEntity
+    public class Province : BaseEntity, IBaseEntity
     {
         public string? Name { get; set; }
         public string? Description { get; set; }

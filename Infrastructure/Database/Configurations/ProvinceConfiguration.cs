@@ -8,11 +8,24 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Infrastructure.Database.Configurations
 {
-    public class ProvinceConfiguration : IEntityTypeConfiguration<Provice>
+    public class ProvinceConfiguration : IEntityTypeConfiguration<Province>
     {
-        public void Configure(EntityTypeBuilder<Provice> builder)
+        public void Configure(EntityTypeBuilder<Province> builder)
         {
-            throw new NotImplementedException();
+            builder
+            .HasKey(a => a.Id);
+
+            builder
+                .Property(m => m.Name)
+                .IsRequired()
+                .HasMaxLength(50);
+
+            builder
+                .Property(m => m.Description)
+                .HasMaxLength(255);
+
+            builder
+                .ToTable("Provinces");
         }
     }
 }

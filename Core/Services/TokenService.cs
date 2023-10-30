@@ -14,9 +14,9 @@ namespace Core.Services
         public async Task<string> SendEmailTokenAsync()
         {
             return await _emailProvider.SendEmailAsync(
-                        subject: "Sending a new token to you",
-                        message: "Please save the token 'XXXXX'",
-                        recepients: new List<string>() { "dummy@mail.com" }
+                    subject: "Sending a new token to you",
+                    message: "Please save the token 'XXXXX'",
+                    recepients: new List<string>() { "dummy@mail.com" }
                     );
         }
     }

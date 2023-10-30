@@ -11,10 +11,18 @@ namespace Infrastructure.Database.Repositories
 {
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntity
     {
+        // พัฒนา _IBaseRepository ด้วย DataContext
+
         protected readonly DatabaseContext _context;
         public BaseRepository(DatabaseContext context)
         {
             this._context = context;
+        }
+
+        public async Task<List<TEntity>> GetAllAsync()
+        {
+            List<TEntity> entities = await _context.Set<TEntity>().Select(x => x).ToListAsync();
+            return entities;
         }
 
         public async Task<TEntity> GetByIdAsync(Guid id)

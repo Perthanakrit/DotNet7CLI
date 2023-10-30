@@ -9,6 +9,7 @@ namespace Infrastructure.Email
 {
     public class SendgridEmailProvider : IEmailProvider
     {
+        // พัฒนาการส่งเมล์โดยการสมมติว่ากำลังต่อกับ Email Provider ชื่อ Sendgrid
         protected readonly SendgridEmailProviderOptions _options;
         public SendgridEmailProvider(IOptions<SendgridEmailProviderOptions> options)
         {
