@@ -9,6 +9,6 @@ namespace Core.Interfaces.Infra.Database
 {
     public interface IProvinceRepository : IBaseRepository<Province>
     {
-
+        Province GetByIdWithPointOfInterestAsync(Guid id);
     }
 }

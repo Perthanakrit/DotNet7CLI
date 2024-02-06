@@ -97,8 +97,9 @@ namespace Core.Services
             return provinces.Select(ConvertToResponseModel).ToList();
         }
 
-        public Task<ProvinceServiceResponse> GetProvinceAsyncWithPointOfInterestsAsync(Guid id)
+        public async Task<ProvinceServiceResponse> GetProvinceAsyncWithPointOfInterestsAsync(Guid id)
         {
+            //Province province = await _repository.GetByIdWithPointOfInterestAsync(id);
             throw new NotImplementedException();
         }
     }

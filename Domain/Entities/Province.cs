@@ -9,7 +9,6 @@ namespace Domain.Entities
     {
         public string? Name { get; set; }
         public string? Description { get; set; }
-
         #region Entity Framework Relationships
         public ICollection<PointOfInterest>? PointOfInterests { get; set; }
         #endregion

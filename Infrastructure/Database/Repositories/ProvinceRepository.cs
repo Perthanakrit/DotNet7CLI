@@ -20,5 +20,10 @@ namespace Infrastructure.Database.Repositories
                         .Include(c => c.PointOfInterests)
                         .FirstOrDefaultAsync(c => c.Id == id);
         }
+
+        Province IProvinceRepository.GetByIdWithPointOfInterestAsync(Guid id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
